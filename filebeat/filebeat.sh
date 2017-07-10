@@ -14,5 +14,4 @@ do
    echo "TESTANDO FLUXO DE LOG" >> /tmp/test.log
    tail -n 50 /tmp/test.log
 done
-
 /etc/init.d/filebeat status
