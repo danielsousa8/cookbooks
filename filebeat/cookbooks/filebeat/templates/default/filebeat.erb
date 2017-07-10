@@ -1,0 +1,8 @@
+filebeat.prospectors:
+- input_type: log
+  paths:
+    - /tmp/test.log
+output:
+  elasticsearch:
+     hosts: ["elasticsearch:9200"]
+     index: "filebeat-%{+yyyy.MM.dd}"

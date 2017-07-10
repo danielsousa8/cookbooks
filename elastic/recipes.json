@@ -1,0 +1,13 @@
+{
+ "java": {
+      "jdk_version": 8,
+      "install_flavor": "oracle",
+      "oracle": {
+        "accept_oracle_download_terms": true
+      }
+  }, 
+  "run_list": [
+    "recipe[java]",
+    "recipe[elastic::default]"
+  ]
+}
